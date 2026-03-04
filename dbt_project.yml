@@ -37,3 +37,5 @@ models:
     staging:
       +materialized: table
 
+tests:
+  +severity: warn # All tests in our lesson project default to warn
