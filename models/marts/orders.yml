@@ -18,27 +18,6 @@ models:
               to: ref('stg_orders')
               field: order_id
 
-      - name: order_created_at
-        description: "When the order was created"
-
-      - name: order_returned_at
-        description: "When the order was returned"
-
-      - name: order_delivered_at
-        description: "When the order was delivered"
-
-      - name: order_shipped_at
-        description: "When the order was shipped"
-
-      - name: order_status
-
-
-      - name: num_items_ordered
-        description: "Number of items in the order"
-
-
-    # Columns from int_ecommerce__order_items_product
-    # We should test these columns as they're new
       - name: total_sale_price
         description: "Sum of item_sale_price for the whole order"
         tests:
